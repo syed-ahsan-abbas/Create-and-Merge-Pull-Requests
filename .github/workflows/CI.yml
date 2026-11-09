@@ -1,15 +1,14 @@
 name: integration
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
+  CI/CD:
   runs-on: ubuntu-latest
   steps:
     - name: say Hello
-      run: echo "Hello Doston"
-
-    - name: say AOA
-      run: echo "AOA"
+      run: echo "Hello"
 
 
