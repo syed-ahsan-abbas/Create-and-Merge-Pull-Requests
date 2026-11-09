@@ -8,16 +8,20 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Please Write the code"
+      - name: write the code
+        run: echo "Please Write the code"
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: build the code
         run: echo "Please build this code"
   test:
     runs-on: ubuntu-latest
     steps:
+    - name: Test the code
       run: echo "Please test the code"
   deploye:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Please deploye the Project"
+      - name: Deploye the code
+        run: echo "Please deploye the Project"
