@@ -1,0 +1,10 @@
+name: Continous-integration
+on:
+  push: 
+    branches: [main]
+jobs:
+  Workflow Start
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Doston"
+        run: echo"AOA"
