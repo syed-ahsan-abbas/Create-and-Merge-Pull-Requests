@@ -8,10 +8,11 @@ jobs:
   Workflow_Start:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
+      - name: say Hello
         run: echo "Hello Doston"
 
       - name: say AOA
         run: echo "AOA"
+
 
 
