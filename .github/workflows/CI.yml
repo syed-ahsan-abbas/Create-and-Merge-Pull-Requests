@@ -5,10 +5,10 @@ on:
     branches: [main]
 
 jobs:
-  CI_CD:
-  runs-on: ubuntu-latest
-  steps:
-    - name: say Hello
-      run: echo "Hello"
+  ci_cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say Hello
+        run: echo "Hello"
 
 
