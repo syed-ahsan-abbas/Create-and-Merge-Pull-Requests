@@ -16,7 +16,7 @@ jobs:
       - name: build the code
         run: echo "Please build this code"
   test:
-    needs: [build]
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
     - name: Test the code
