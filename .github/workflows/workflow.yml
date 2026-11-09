@@ -1,7 +1,9 @@
 name: Continous-integration
+
 on:
-  push: 
+  push:
     branches: [main]
+
 jobs:
   Workflow_Start:
     runs-on: ubuntu-latest
@@ -9,5 +11,6 @@ jobs:
       - name: Say Hello
         run: echo "Hello Doston"
 
-     - name: say AOA
+      - name: say AOA
         run: echo "AOA"
+
