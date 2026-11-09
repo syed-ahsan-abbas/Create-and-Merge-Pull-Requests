@@ -3,7 +3,7 @@ on:
   push: 
     branches: [main]
 jobs:
-  Workflow Start:
+  Workflow_Start:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
