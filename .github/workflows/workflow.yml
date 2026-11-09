@@ -5,10 +5,10 @@ on:
     branches: [main]
 
 jobs:
-  Integration:
+  workflow_start:
     runs-on: ubuntu-latest
     steps:
-      - name: say Hello
+      - name: Say Hello
         run: echo "Hello Doston"
 
       - name: say AOA
