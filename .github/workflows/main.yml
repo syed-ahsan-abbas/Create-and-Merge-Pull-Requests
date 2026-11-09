@@ -1,0 +1,23 @@
+name: CICD
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Please Write the code"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        run: echo "Please build this code"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Please test the code"
+  deploye:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Please deploye the Project"
