@@ -10,16 +10,19 @@ jobs:
       - name: write the code
         run: echo "Please Write the code"
   build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: build the code
         run: echo "Please build this code"
   test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
     - name: Test the code
       run: echo "Please test the code"
   deploye:
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploye the code
