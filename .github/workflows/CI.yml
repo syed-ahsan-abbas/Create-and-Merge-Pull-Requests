@@ -1,12 +1,15 @@
 name: continous-integration
 
-on: 
+on:
   push:
     branches: [main]
 
 jobs:
   continous_integration:
-  runs-on: ubuntu-latest
-  steps:
-    - name: say Hello
-      run: echo "Hello Doston"
+    runs-on: ubuntu-latest
+    steps:
+      - name: say Hello
+        run: echo "Hello Doston"
+
+      - name: say AOA
+        run: echo "AOA"
